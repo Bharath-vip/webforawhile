@@ -57,7 +57,7 @@ export default function CategoriesPage() {
       </div>
 
       <div className="mt-16 text-center">
-         <AdSpace format="banner" className="mx-auto" />
+         <AdSpace format="inline" className="mx-auto max-w-4xl" />
       </div>
     </div>
   );

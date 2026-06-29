@@ -135,6 +135,11 @@ export function Header() {
           <Link href="/submit" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">
             Submit Tool
           </Link>
+          <Button asChild variant="outline" className="rounded-full px-6 border-primary text-primary hover:bg-primary hover:text-white">
+            <a href="https://www.effectivecpmnetwork.com/kn5dhfytsw?key=601af2b8bd0e68a1700533a5547ae941" target="_blank" rel="noopener noreferrer">
+              Sponsored
+            </a>
+          </Button>
           <Button className="bg-white text-black hover:bg-white/90 rounded-full px-6">
             Get Newsletter
           </Button>
@@ -190,6 +195,11 @@ export function Header() {
               <Link href="/categories" className="block py-2 text-white font-medium border-b border-white/5">Categories</Link>
               <Link href="/articles" className="block py-2 text-white font-medium border-b border-white/5">Articles</Link>
               <Link href="/submit" className="block py-2 text-white font-medium border-b border-white/5">Submit Tool</Link>
+              <Button asChild variant="outline" className="w-full mt-2 border-primary text-primary hover:bg-primary hover:text-white">
+                <a href="https://www.effectivecpmnetwork.com/kn5dhfytsw?key=601af2b8bd0e68a1700533a5547ae941" target="_blank" rel="noopener noreferrer">
+                  Sponsored Offer
+                </a>
+              </Button>
               <Button className="w-full bg-white text-black mt-2">Get Newsletter</Button>
             </div>
           </motion.div>

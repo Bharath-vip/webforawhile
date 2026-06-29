@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,11 +38,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className="dark">
       <head>
         <link rel="canonical" href="https://yourdomain.com" />
-        {/* ========================================== */}
-        {/* ADSTERRA GLOBAL SCRIPTS (Popunders / Social Bar) */}
-        {/* Paste your <script> tags here below this line */}
-        {/* ========================================== */}
-        
+        {/* Adsterra Popunder */}
+        <Script 
+          id="adsterra-popunder"
+          src="https://pl30129583.effectivecpmnetwork.com/4d/a5/4a/4da54ac5a35d113bb2ec85a20140a28c.js"
+          strategy="beforeInteractive"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
@@ -59,6 +61,13 @@ export default function RootLayout({
           <Footer />
         </ThemeProvider>
         <Analytics />
+        
+        {/* Adsterra Social Bar */}
+        <Script 
+          id="adsterra-social-bar"
+          src="https://pl30129585.effectivecpmnetwork.com/c8/68/5b/c8685b445445d0cfad2e1ea44f7a790d.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
