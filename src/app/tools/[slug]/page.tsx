@@ -65,7 +65,7 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
         {/* Left Sidebar */}
         <div className="hidden lg:block w-64 flex-shrink-0">
           <div className="sticky top-32 space-y-8">
-            <AdSpace format="rectangle" />
+            <AdSpace format="rectangle300x250" />
           </div>
         </div>
 
@@ -143,7 +143,7 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
         {/* Right Sidebar */}
         <div className="hidden xl:block w-64 flex-shrink-0">
           <div className="sticky top-32">
-            <AdSpace format="rectangle" />
+            <AdSpace format="rectangle300x250" />
           </div>
         </div>
       </div>

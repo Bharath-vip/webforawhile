@@ -57,7 +57,7 @@ export default function Home() {
       
       {/* Top Ad Unit */}
       <div className="container mx-auto px-4 py-8">
-        <AdSpace format="banner" />
+        <AdSpace format="banner320x50" />
       </div>
 
       <FeaturedTools />
@@ -97,7 +97,7 @@ export default function Home() {
 
       {/* Middle Ad Unit */}
       <div className="container mx-auto px-4 py-8 flex justify-center">
-        <AdSpace format="rectangle" />
+        <AdSpace format="rectangle300x250" />
       </div>
 
       {/* Compare Tools Section */}
@@ -213,7 +213,7 @@ export default function Home() {
 
       {/* Bottom Ad Unit */}
       <div className="container mx-auto px-4 py-8 pb-16">
-        <AdSpace format="banner" />
+        <AdSpace format="banner320x50" />
       </div>
 
     </div>

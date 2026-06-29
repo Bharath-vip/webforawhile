@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 
 interface AdSpaceProps {
   className?: string;
-  format?: 'banner' | 'rectangle' | 'inline';
+  format?: 'banner320x50' | 'rectangle160x300' | 'rectangle300x250' | 'inline';
   // Optional: pass the Adsterra Zone ID if you want to make it dynamic
   zoneId?: string;
 }

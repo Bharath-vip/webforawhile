@@ -36,7 +36,7 @@ export default function AdvertisingPage() {
       <div className="text-center">
         <h2 className="text-2xl font-bold mb-6">Sample Banner Placement</h2>
         <div className="flex justify-center">
-          <AdSpace format="banner" />
+          <AdSpace format="banner320x50" />
         </div>
       </div>
     </div>

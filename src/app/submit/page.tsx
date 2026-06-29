@@ -55,7 +55,7 @@ export default function SubmitPage() {
         </form>
       </div>
 
-      <AdSpace format="banner" className="mx-auto" />
+      <AdSpace format="banner320x50" className="mx-auto" />
     </div>
   );
 }

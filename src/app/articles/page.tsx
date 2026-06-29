@@ -47,7 +47,7 @@ export default function ArticlesPage() {
       
       <div className="mt-16">
         {/* Placeholder for global display banner ad */}
-        <AdSpace format="banner" className="mx-auto" />
+        <AdSpace format="banner320x50" className="mx-auto" />
       </div>
     </div>
   );
