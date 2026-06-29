@@ -37,6 +37,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className="dark">
       <head>
         <link rel="canonical" href="https://yourdomain.com" />
+        {/* ========================================== */}
+        {/* ADSTERRA GLOBAL SCRIPTS (Popunders / Social Bar) */}
+        {/* Paste your <script> tags here below this line */}
+        {/* ========================================== */}
+        
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
