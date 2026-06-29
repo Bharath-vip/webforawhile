@@ -61,24 +61,24 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-white mb-4">Categories</h3>
-            <ul className="space-y-3">
-              <li><Link href="#" className="text-muted-foreground hover:text-white transition-colors">Coding Assistants</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-white transition-colors">Content Writing</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-white transition-colors">Image Generation</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-white transition-colors">Video Editing</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-white transition-colors">Business & SEO</Link></li>
+            <h3 className="font-semibold mb-4">Categories</h3>
+            <ul className="space-y-3 text-sm">
+              <li><Link href="/categories" className="text-muted-foreground hover:text-white transition-colors">Coding Assistants</Link></li>
+              <li><Link href="/categories" className="text-muted-foreground hover:text-white transition-colors">Content Writing</Link></li>
+              <li><Link href="/categories" className="text-muted-foreground hover:text-white transition-colors">Image Generation</Link></li>
+              <li><Link href="/categories" className="text-muted-foreground hover:text-white transition-colors">Video Editing</Link></li>
+              <li><Link href="/categories" className="text-muted-foreground hover:text-white transition-colors">Business & SEO</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold text-white mb-4">Company</h3>
-            <ul className="space-y-3">
-              <li><Link href="#" className="text-muted-foreground hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-white transition-colors">Submit a Tool</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-white transition-colors">Advertising</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-white transition-colors">Privacy Policy</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-white transition-colors">Terms of Service</Link></li>
+            <h3 className="font-semibold mb-4">Company</h3>
+            <ul className="space-y-3 text-sm">
+              <li><Link href="/about" className="text-muted-foreground hover:text-white transition-colors">About Us</Link></li>
+              <li><Link href="/submit" className="text-muted-foreground hover:text-white transition-colors">Submit a Tool</Link></li>
+              <li><Link href="/advertising" className="text-muted-foreground hover:text-white transition-colors">Advertising</Link></li>
+              <li><Link href="/privacy" className="text-muted-foreground hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="text-muted-foreground hover:text-white transition-colors">Terms of Service</Link></li>
             </ul>
           </div>
 
