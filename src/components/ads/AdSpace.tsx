@@ -10,12 +10,13 @@ interface AdSpaceProps {
   zoneId?: string;
 }
 
-export function AdSpace({ className, format = 'banner', zoneId }: AdSpaceProps) {
+export function AdSpace({ className, format = 'banner320x50', zoneId }: AdSpaceProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const formatClasses = {
-    banner: 'w-full h-[90px] min-h-[90px]', // Default banner
-    rectangle: 'w-[160px] h-[300px] min-h-[300px]', // Banner 160x300
+    banner320x50: 'w-[320px] h-[50px] min-h-[50px]', // Banner 320x50
+    rectangle160x300: 'w-[160px] h-[300px] min-h-[300px]', // Banner 160x300
+    rectangle300x250: 'w-[300px] h-[250px] min-h-[250px]', // Banner 300x250
     inline: 'w-full h-auto min-h-[100px]', // Native Banner
   };
 
@@ -34,7 +35,7 @@ export function AdSpace({ className, format = 'banner', zoneId }: AdSpaceProps) 
 
         containerRef.current.appendChild(invoke);
         containerRef.current.appendChild(container);
-      } else if (format === 'rectangle') {
+      } else if (format === 'rectangle160x300') {
         // Banner 160x300 (1b9d35c4bfddcf50bcf91a7aa1473c47)
         const conf = document.createElement('script');
         conf.type = 'text/javascript';
@@ -54,8 +55,48 @@ export function AdSpace({ className, format = 'banner', zoneId }: AdSpaceProps) 
 
         containerRef.current.appendChild(conf);
         containerRef.current.appendChild(invoke);
+      } else if (format === 'rectangle300x250') {
+        // Banner 300x250 (aacb847978857f9d6b537e348d7e7f03)
+        const conf = document.createElement('script');
+        conf.type = 'text/javascript';
+        conf.innerHTML = `
+          atOptions = {
+            'key' : 'aacb847978857f9d6b537e348d7e7f03',
+            'format' : 'iframe',
+            'height' : 250,
+            'width' : 300,
+            'params' : {}
+          };
+        `;
+        const invoke = document.createElement('script');
+        invoke.type = 'text/javascript';
+        invoke.src = `//www.highperformanceformat.com/aacb847978857f9d6b537e348d7e7f03/invoke.js`;
+        invoke.async = true;
+
+        containerRef.current.appendChild(conf);
+        containerRef.current.appendChild(invoke);
+      } else if (format === 'banner320x50') {
+        // Banner 320x50 (fca2560aab27d3ca282e540c3ba6db55)
+        const conf = document.createElement('script');
+        conf.type = 'text/javascript';
+        conf.innerHTML = `
+          atOptions = {
+            'key' : 'fca2560aab27d3ca282e540c3ba6db55',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+          };
+        `;
+        const invoke = document.createElement('script');
+        invoke.type = 'text/javascript';
+        invoke.src = `//www.highperformanceformat.com/fca2560aab27d3ca282e540c3ba6db55/invoke.js`;
+        invoke.async = true;
+
+        containerRef.current.appendChild(conf);
+        containerRef.current.appendChild(invoke);
       } else {
-        // Fallback for standard banner if needed, can use the same rectangle zone but adjusted or generic placeholder
+        // Fallback for custom generic banner if needed
         if (zoneId) {
             const conf = document.createElement('script');
             conf.type = 'text/javascript';
